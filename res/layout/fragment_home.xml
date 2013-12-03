@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/home_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user_profile_background" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/user_image" >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/user_image"
+                android:layout_marginTop="30dip"
+                android:text="@string/user_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/logged_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/user_name"
+                android:text="@string/logged_in"
+                android:textColor="#999999"
+                android:textSize="8sp"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/new_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_image"
+            android:layout_alignParentLeft="true"
+            android:padding="6dip"
+            android:text="@string/new_messages"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="6dip"
+            android:src="@drawable/user_image" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/home_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_layout_top" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/this_is_a_demo"
+        android:layout_below="@+id/home_spinner"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/this_is_a_demo"
+        android:layout_below="@+id/home_spinner"
+        android:padding="6dip" />
+
+    <ImageView
+        android:id="@+id/home_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/this_is_a_demo"
+        android:layout_below="@+id/home_spinner"
+        android:padding="6dip" />
+
+    <Button
+        android:id="@+id/home_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dip"
+        android:background="@drawable/button_background"
+        android:text="@string/home_top"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/this_is_a_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/webaddress"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="4dip"
+        android:text="@string/demo1"
+        android:textColor="#999999"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/webaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copyright"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="4dip"
+        android:text="@string/demo2"
+        android:textColor="#999999"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="4dip"
+        android:paddingLeft="4dip"
+        android:text="@string/copyright"
+        android:textColor="#999999"
+        android:textSize="8sp" />
+
+</RelativeLayout>

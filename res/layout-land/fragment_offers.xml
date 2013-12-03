@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_profile_background2" >
+
+    <TextView
+        android:id="@+id/offers_header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:text="@string/offers_header1"
+        android:textColor="#aaaaaa"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/offers_layout_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offers_header1"
+        android:layout_toLeftOf="@+id/offers_image1" >
+
+        <TextView
+            android:id="@+id/offers_body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dip"
+            android:paddingLeft="4dip"
+            android:paddingTop="12dip"
+            android:text="@string/offers_body1"
+            android:textColor="#777777"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/offers_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_below="@+id/offers_body1"
+            android:layout_margin="12dip"
+            android:background="@drawable/offers_divider_line" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/offers_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/offers_header1"
+        android:padding="6dip"
+        android:src="@drawable/offers1" />
+
+    <TextView
+        android:id="@+id/offers_body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offers_layout_intro"
+        android:padding="4dip"
+        android:text="@string/offers_body2"
+        android:textColor="#777777"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/learn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offers_body2"
+        android:layout_margin="4dip"
+        android:background="@drawable/button_background"
+        android:text="@string/learn_more"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <View
+        android:id="@+id/offers_divider_line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/learn_more"
+        android:layout_margin="4dip"
+        android:background="@drawable/offers_divider_line" />
+
+    <TextView
+        android:id="@+id/offers_body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offers_divider_line2"
+        android:padding="4dip"
+        android:text="@string/offers_body3"
+        android:textColor="#777777"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/learn_more2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offers_body3"
+        android:layout_margin="4dip"
+        android:background="@drawable/button_background"
+        android:text="@string/learn_more"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/demo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copyright"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="4dip"
+        android:text="@string/demo3"
+        android:textColor="#999999"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="4dip"
+        android:paddingLeft="4dip"
+        android:text="@string/copyright"
+        android:textColor="#999999"
+        android:textSize="8sp" />
+
+</RelativeLayout>
